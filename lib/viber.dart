@@ -10,44 +10,41 @@ class Home extends StatefulWidget {
 Padding message() {
   return Padding(
     padding: const EdgeInsets.all(15.0),
-    child: Container(
-      width: 100,
-      child: Row(
-        children: [
-          CircleAvatar(
-            backgroundColor: Colors.deepPurple,
-            child: Text("MS"),
-          ),
-          SizedBox(
-            width: 25,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Text(
-                    "Mamata Shrestha",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.black),
-                  ),
-                  SizedBox(
-                    width: 40.0,
-                  ),
-                  Text(
-                    "Yesterday",
-                    style: TextStyle(fontSize: 8.0),
-                  )
-                ],
-              ),
-              Text(
-                "abcd",
-                style: TextStyle(color: Colors.black),
-              ),
-            ],
-          )
-        ],
-      ),
+    child: Row(
+      children: [
+        CircleAvatar(
+          backgroundColor: Colors.deepPurple,
+          child: Text("MS"),
+        ),
+        SizedBox(
+          width: 25,
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  "Mamata Shrestha",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.black),
+                ),
+                SizedBox(
+                  width: 40.0,
+                ),
+                Text(
+                  "Yesterday",
+                  style: TextStyle(fontSize: 8.0),
+                )
+              ],
+            ),
+            Text(
+              "abcd",
+              style: TextStyle(color: Colors.black),
+            ),
+          ],
+        )
+      ],
     ),
   );
 }
