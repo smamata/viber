@@ -55,23 +55,23 @@ class _CallsPageState extends State<CallsPage> {
                     children: [
                       CircleAvatar(
                           backgroundColor: Colors.teal[400],
-                          radius: 30,
+                          radius: 20,
                           child: Icon(
                             Icons.phone_callback_sharp,
                             color: Colors.white,
                           )),
                       SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       Text(
                         "Viber Out",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black,
-                            fontSize: 20),
+                            fontSize: 15),
                       ),
                       SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       OutlinedButton(
                           onPressed: () {},
@@ -105,11 +105,11 @@ class _CallsPageState extends State<CallsPage> {
                                 TextStyle(fontSize: 20, color: Colors.black26),
                           ),
                           SizedBox(
-                            width: 150,
+                            width: 75,
                           ),
                           Text("View All",
                               style: TextStyle(
-                                  fontSize: 20, color: Colors.deepPurple)),
+                                  fontSize: 15, color: Colors.deepPurple)),
                         ],
                       ),
                       SizedBox(
@@ -133,7 +133,7 @@ class _CallsPageState extends State<CallsPage> {
                                 color: Colors.red, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
-                            width: 180,
+                            width: 150,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -163,7 +163,7 @@ class _CallsPageState extends State<CallsPage> {
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
-                            width: 180,
+                            width: 150,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -193,7 +193,7 @@ class _CallsPageState extends State<CallsPage> {
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
-                            width: 180,
+                            width: 150,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -219,7 +219,7 @@ class _CallsPageState extends State<CallsPage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "INVITE TO VIBER",
-                          style: TextStyle(fontSize: 20, color: Colors.black26),
+                          style: TextStyle(fontSize: 15, color: Colors.black26),
                         ),
                       ),
                     ],
@@ -249,7 +249,7 @@ class _CallsPageState extends State<CallsPage> {
                                 ),
                                 Text("Abcd"),
                                 SizedBox(
-                                  width: 100,
+                                  width: 75,
                                 ),
                                 OutlinedButton(
                                     onPressed: () {}, child: Text("Invite")),
@@ -275,7 +275,7 @@ class _CallsPageState extends State<CallsPage> {
                                 ),
                                 Text("Abcd"),
                                 SizedBox(
-                                  width: 100,
+                                  width: 75,
                                 ),
                                 OutlinedButton(
                                     onPressed: () {}, child: Text("Invite"))
@@ -336,7 +336,7 @@ class _CallsPageState extends State<CallsPage> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: 180,
+                          width: 90,
                         ),
                         Text(
                           "ALL",
@@ -374,7 +374,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -416,7 +416,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -458,7 +458,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -500,7 +500,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -542,7 +542,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -584,7 +584,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
@@ -626,7 +626,7 @@ class _CallsPageState extends State<CallsPage> {
                           ),
                           Text("Abcd"),
                           SizedBox(
-                            width: 160,
+                            width: 100,
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black26,
