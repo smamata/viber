@@ -660,37 +660,37 @@ class _CallsPageState extends State<CallsPage> {
         ),
       ),
 
-      //buttom navigation bar
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentState,
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.chat_rounded,
-            ),
-            label: 'Chats',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.call),
-            label: 'Calls',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chrome_reader_mode_outlined),
-            label: 'Explore',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.line_weight_outlined),
-            label: 'More',
-          ),
-        ],
-        onTap: (index) {
-          setState(() {
-            currentState = index;
-          });
-        },
-        selectedItemColor: Colors.deepPurple,
-      ),
+      // //buttom navigation bar
+      // bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: currentState,
+      //   type: BottomNavigationBarType.fixed,
+      //   items: const <BottomNavigationBarItem>[
+      //     BottomNavigationBarItem(
+      //       icon: Icon(
+      //         Icons.chat_rounded,
+      //       ),
+      //       label: 'Chats',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.call),
+      //       label: 'Calls',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.chrome_reader_mode_outlined),
+      //       label: 'Explore',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.line_weight_outlined),
+      //       label: 'More',
+      //     ),
+      //   ],
+      //   onTap: (index) {
+      //     setState(() {
+      //       currentState = index;
+      //     });
+      //   },
+      //   selectedItemColor: Colors.deepPurple,
+      // ),
     );
   }
 }
