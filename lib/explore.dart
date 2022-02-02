@@ -11,14 +11,40 @@ class Explore extends StatefulWidget {
   _ExploreState createState() => _ExploreState();
 }
 
+Padding Vibe() {
+  return Padding(
+    padding: const EdgeInsets.all(5.0),
+    child: Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Container(
+          // color: Colors.red,
+          width: 150,
+          height: 220,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(26),
+              image: DecorationImage(
+                  image: AssetImage("images/a.jpeg"), fit: BoxFit.cover)),
+        ),
+        Positioned(
+          top: 180,
+          left: 40,
+          child: CircleAvatar(
+            backgroundColor: Colors.black,
+            radius: 38.0,
+            child: CircleAvatar(
+              backgroundImage: AssetImage("images/b.jpeg"),
+              radius: 35.0,
+            ),
+          ),
+        )
+      ],
+    ),
+  );
+}
+
 class _ExploreState extends State<Explore> {
   int currentState = 0;
-  static List<Widget> _widgetOptions = <Widget>[
-    Home(),
-    CallsPage(),
-    Explore(),
-    Text("abcd")
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,24 +130,22 @@ class _ExploreState extends State<Explore> {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
-                Container(
-                  width: 50,
-                  height: 50,
-                  child: Stack(
-                    children: [
-                      Container(
-                        color: Colors.red,
-                        width: 40,
-                        height: 40,
-                      ),
-                      Container(
-                        color: Colors.blue,
-                        width: 30,
-                        height: 30,
-                      )
-                    ],
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 15),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Vibe(),
+                        Vibe(),
+                        Vibe(),
+                        Vibe(),
+                        Vibe(),
+                        Vibe()
+                      ],
+                    ),
                   ),
                 )
               ],
