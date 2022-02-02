@@ -176,9 +176,9 @@ class _ExploreState extends State<Explore> {
                     child: Row(
                       children: [
                         stickers("images/a.jpeg"),
-                        stickers("images/a.jpeg"),
-                        stickers("images/a.jpeg"),
-                        stickers("images/a.jpeg"),
+                        stickers("images/b.jpeg"),
+                        stickers("images/c.png"),
+                        stickers("images/d.png"),
                         stickers("images/a.jpeg"),
                       ],
                     ),
