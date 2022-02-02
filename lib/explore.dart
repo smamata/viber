@@ -11,34 +11,46 @@ class Explore extends StatefulWidget {
   _ExploreState createState() => _ExploreState();
 }
 
-Padding Vibe() {
+Padding Vibe(String picture, String photo) {
   return Padding(
-    padding: const EdgeInsets.all(5.0),
+    padding: const EdgeInsets.fromLTRB(8, 8, 8, 30),
     child: Stack(
       clipBehavior: Clip.none,
       children: [
         Container(
-          // color: Colors.red,
           width: 150,
-          height: 220,
+          height: 250,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(26),
               image: DecorationImage(
-                  image: AssetImage("images/a.jpeg"), fit: BoxFit.cover)),
+                  image: AssetImage(picture), fit: BoxFit.cover)),
         ),
         Positioned(
-          top: 180,
+          top: 205,
           left: 40,
           child: CircleAvatar(
             backgroundColor: Colors.black,
-            radius: 38.0,
+            radius: 35.0,
             child: CircleAvatar(
-              backgroundImage: AssetImage("images/b.jpeg"),
-              radius: 35.0,
+              backgroundImage: AssetImage(photo),
+              radius: 30.0,
             ),
           ),
         )
       ],
+    ),
+  );
+}
+
+Padding stickers(String sticker) {
+  return Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: Container(
+      width: 150,
+      height: 150,
+      decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(sticker), fit: BoxFit.cover),
+          borderRadius: BorderRadius.circular(26)),
     ),
   );
 }
@@ -133,22 +145,46 @@ class _ExploreState extends State<Explore> {
                   height: 10,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 15),
+                  padding: const EdgeInsets.fromLTRB(2, 0, 8, 30),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        Vibe(),
-                        Vibe(),
-                        Vibe(),
-                        Vibe(),
-                        Vibe(),
-                        Vibe()
+                        Vibe("images/pic1.jpeg", "images/i.jpeg"),
+                        Vibe("images/pic3.jpeg", "images/j.jpeg"),
+                        Vibe("images/pic2.jpeg", "images/g.jpeg"),
+                        Vibe("images/pic4.jpeg", "images/h.png"),
+                        Vibe("images/pic5.jpeg", "images/e.jpeg"),
+                        Vibe("images/pic6.jpeg", "images/f.jpeg")
                       ],
                     ),
                   ),
-                )
+                ),
               ],
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Download sticker pack",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        stickers("images/a.jpeg"),
+                        stickers("images/a.jpeg"),
+                        stickers("images/a.jpeg"),
+                        stickers("images/a.jpeg"),
+                        stickers("images/a.jpeg"),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),

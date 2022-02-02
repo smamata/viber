@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:viber/call.dart';
 import 'package:viber/explore.dart';
+import 'package:viber/more.dart';
 import 'package:viber/viber.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +19,7 @@ class _HomePageState extends State<HomePage> {
     Home(),
     CallsPage(),
     Explore(),
-    Text("abcd")
+    More()
   ];
   @override
   Widget build(BuildContext context) {
