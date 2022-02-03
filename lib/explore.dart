@@ -49,7 +49,7 @@ Padding stickers(String sticker) {
       width: 150,
       height: 150,
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(sticker), fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage(sticker), fit: BoxFit.fill),
           borderRadius: BorderRadius.circular(26)),
     ),
   );
@@ -91,8 +91,7 @@ class _ExploreState extends State<Explore> {
                   width: 400,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("images/b.jpeg"),
-                          fit: BoxFit.cover),
+                          image: AssetImage("images/b.jpeg"), fit: BoxFit.fill),
                       borderRadius: BorderRadius.circular(20))),
             ),
             Padding(
@@ -175,10 +174,10 @@ class _ExploreState extends State<Explore> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        stickers("images/a.jpeg"),
-                        stickers("images/b.jpeg"),
-                        stickers("images/c.png"),
-                        stickers("images/d.png"),
+                        stickers("images/v2.png"),
+                        stickers("images/e1.jpeg"),
+                        stickers("images/e3.png"),
+                        stickers("images/e4.png"),
                         stickers("images/a.jpeg"),
                       ],
                     ),
