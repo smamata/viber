@@ -17,6 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 
 <img src="images/a.jpeg" height="200" width="300" >
 
-<video width="500" height="1000" controls>
-  <source src="viber.mp4" type="video/mp4">
-</video>
+
