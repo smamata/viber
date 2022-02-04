@@ -9,7 +9,7 @@ class Home extends StatefulWidget {
 
 Padding message() {
   return Padding(
-    padding: const EdgeInsets.all(15.0),
+    padding: const EdgeInsets.all(10.0),
     child: Row(
       children: [
         CircleAvatar(
@@ -82,22 +82,23 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
+            Divider(),
             message(),
-            message(),
-            message(),
-            message(),
-            message(),
-            message(),
-            message(),
-            message(),
-            message(),
+            Divider(),
             message(),
           ],
         ),
