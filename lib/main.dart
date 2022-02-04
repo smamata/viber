@@ -6,6 +6,7 @@ import 'package:viber/viber.dart';
 
 void main(List<String> args) {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
 }
