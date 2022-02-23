@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       body: Center(
         child: _widgetOptions.elementAt(currentState),
       ),
