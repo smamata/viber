@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:viber/abc.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -81,7 +82,12 @@ class _HomeState extends State<Home> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            message(),
+            InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                },
+                child: message()),
             Divider(),
             message(),
             Divider(),
