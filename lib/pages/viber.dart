@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viber/pages/abc.dart';
+import 'package:viber/pages/floatpages.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-Widget message(String Name, String msg, String time) {
+Widget message(String Name, String msg, String time, String sname) {
   return SizedBox(
     width: double.infinity,
     child: Padding(
@@ -17,7 +18,7 @@ Widget message(String Name, String msg, String time) {
         children: [
           CircleAvatar(
             backgroundColor: Colors.deepPurple,
-            child: Text("MS"),
+            child: Text(sname),
           ),
           SizedBox(
             width: 25,
@@ -91,13 +92,13 @@ class _HomeState extends State<Home> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 },
-                child: message('Eric Josh', 'Hey there !!', 'Yesterday')),
+                child: message('Eric Josh', 'Hey there !!', 'Yesterday', 'ES')),
             Divider(),
-            message('Mega Rich', 'lol 😂', '9:45 PM'),
+            message('Mega Rich', 'lol 😂', '9:45 PM', 'MR'),
             Divider(),
-            message('Angela  Keb', 'Will be right back', 'Mon'),
+            message('Angela  Keb', 'Will be right back', 'Mon', 'AK'),
             Divider(),
-            message('Joseph Right', 'hahaha', 'Mar 05'),
+            message('Joseph Right', 'hahaha', 'Mar 05', 'JR'),
             Divider(),
             SizedBox(
               child: Expanded(
@@ -108,7 +109,8 @@ class _HomeState extends State<Home> {
                     itemBuilder: (BuildContext context, int index) {
                       return Column(
                         children: [
-                          message('Rose Jazz', 'How are you?', '24/12/2019'),
+                          message(
+                              'Rose Jazz', 'How are you?', '24/12/2019', 'RJ'),
                           index == 4 ? SizedBox() : Divider(),
                         ],
                       );
@@ -119,7 +121,10 @@ class _HomeState extends State<Home> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const FloatPage()));
+        },
         backgroundColor: Colors.deepPurple,
         label: Icon(Icons.message_rounded),
       ),
