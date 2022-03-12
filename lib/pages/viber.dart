@@ -1,0 +1,128 @@
+import 'package:flutter/material.dart';
+import 'package:viber/pages/abc.dart';
+
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+Widget message(String Name, String msg, String time) {
+  return SizedBox(
+    width: double.infinity,
+    child: Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Row(
+        children: [
+          CircleAvatar(
+            backgroundColor: Colors.deepPurple,
+            child: Text("MS"),
+          ),
+          SizedBox(
+            width: 25,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      Name,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.black),
+                    ),
+                    Text(
+                      time,
+                      style: TextStyle(fontSize: 8.0),
+                    )
+                  ],
+                ),
+                Text(
+                  msg,
+                  style: TextStyle(color: Colors.black),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+class _HomeState extends State<Home> {
+  int currentState = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 1,
+        backgroundColor: Colors.white,
+        title: Text(
+          "Viber",
+          style: TextStyle(
+              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.camera_alt_rounded),
+            color: Colors.deepPurple,
+            iconSize: 30,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search_outlined),
+            color: Colors.deepPurple,
+            iconSize: 30,
+          )
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                },
+                child: message('Eric Josh', 'Hey there !!', 'Yesterday')),
+            Divider(),
+            message('Mega Rich', 'lol 😂', '9:45 PM'),
+            Divider(),
+            message('Angela  Keb', 'Will be right back', 'Mon'),
+            Divider(),
+            message('Joseph Right', 'hahaha', 'Mar 05'),
+            Divider(),
+            SizedBox(
+              child: Expanded(
+                child: ListView.builder(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: 5,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Column(
+                        children: [
+                          message('Rose Jazz', 'How are you?', '24/12/2019'),
+                          index == 4 ? SizedBox() : Divider(),
+                        ],
+                      );
+                    }),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        backgroundColor: Colors.deepPurple,
+        label: Icon(Icons.message_rounded),
+      ),
+    );
+  }
+}
