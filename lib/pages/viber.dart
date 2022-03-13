@@ -13,7 +13,7 @@ Widget message(String Name, String msg, String time, String sname) {
   return SizedBox(
     width: double.infinity,
     child: Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(8.0),
       child: Row(
         children: [
           CircleAvatar(
@@ -44,7 +44,7 @@ Widget message(String Name, String msg, String time, String sname) {
                 ),
                 Text(
                   msg,
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.black, fontSize: 12),
                 ),
               ],
             ),
