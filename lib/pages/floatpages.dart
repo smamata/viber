@@ -102,43 +102,42 @@ class _FloatPageState extends State<FloatPage> {
               ],
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Container(
-              child: Column(
-                children: [
-                  Card(
-                      elevation: 5,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "RECENT",
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                          SizedBox(height: 10),
-                          name('AJ', 'Austin Jems'),
-                          SizedBox(height: 10),
-                          name('EJ', 'Eric Josh'),
-                          SizedBox(height: 10),
-                          name('MR', 'Mega Rich'),
-                          SizedBox(height: 10),
-                          name('AK', 'Angela  Keb'),
-                          SizedBox(height: 10),
-                          name('JR', 'Joseph Right'),
-                        ],
-                      )),
-                  Column(
-                    children: [
-                      name('AJ', 'Austin Jems'),
-                      SizedBox(height: 10),
-                      name('EJ', 'Eric Josh'),
-                      SizedBox(height: 10),
-                      name('MR', 'Mega Rich'),
-                    ],
-                  )
-                ],
-              ),
+          Container(
+            child: ListView(
+              shrinkWrap: true,
+              // scrollDirection: ,
+              children: [
+                Card(
+                    elevation: 5,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "RECENT",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        SizedBox(height: 10),
+                        name('AJ', 'Austin Jems'),
+                        SizedBox(height: 10),
+                        name('EJ', 'Eric Josh'),
+                        SizedBox(height: 10),
+                        name('MR', 'Mega Rich'),
+                        SizedBox(height: 10),
+                        name('AK', 'Angela  Keb'),
+                        SizedBox(height: 10),
+                        name('JR', 'Joseph Right'),
+                      ],
+                    )),
+                Column(
+                  children: [
+                    name('AJ', 'Austin Jems'),
+                    SizedBox(height: 10),
+                    name('EJ', 'Eric Josh'),
+                    SizedBox(height: 10),
+                    name('MR', 'Mega Rich'),
+                  ],
+                )
+              ],
             ),
           )
         ],

@@ -94,29 +94,100 @@ class _HomeState extends State<Home> {
                 },
                 child: message('Eric Josh', 'Hey there !!', 'Yesterday', 'ES')),
             Divider(),
-            message('Mega Rich', 'lol 😂', '9:45 PM', 'MR'),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Mega Rich', 'lol 😂', '9:45 PM', 'MR')),
             Divider(),
-            message('Angela  Keb', 'Will be right back', 'Mon', 'AK'),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child:
+                    message('Angela  Keb', 'Will be right back', 'Mon', 'AK')),
             Divider(),
-            message('Joseph Right', 'hahaha', 'Mar 05', 'JR'),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
             Divider(),
-            SizedBox(
-              child: Expanded(
-                child: ListView.builder(
-                    physics: NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Column(
-                        children: [
-                          message(
-                              'Rose Jazz', 'How are you?', '24/12/2019', 'RJ'),
-                          index == 4 ? SizedBox() : Divider(),
-                        ],
-                      );
-                    }),
-              ),
-            )
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Abc()));
+                }),
+                child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
+            Divider(),
+            // InkWell(
+            //   onTap: (() {
+            //     Navigator.push(context,
+            //         MaterialPageRoute(builder: (context) => const Abc()));
+            //   }),
+            //   child: SizedBox(
+            //     child: Expanded(
+            //       child: ListView.builder(
+            //           physics: NeverScrollableScrollPhysics(),
+            //           shrinkWrap: true,
+            //           itemCount: 8,
+            //           itemBuilder: (BuildContext context, int index) {
+            //             return Column(
+            //               children: [
+            //                 message('Rose Jazz', 'How are you?', '24/12/2019',
+            //                     'RJ'),
+            //                 index == 4 ? SizedBox() : Divider(),
+            //               ],
+            //             );
+            //           }),
+            //     ),
+            //   ),
+            // )
           ],
         ),
       ),
