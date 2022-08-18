@@ -16,10 +16,10 @@ Widget name(String sname, String name) {
           backgroundColor: Colors.deepPurple,
           child: Text(
             sname,
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 30,
         ),
         Text(name)
@@ -34,24 +34,24 @@ class _FloatPageState extends State<FloatPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.deepPurple),
+          icon: const Icon(Icons.arrow_back, color: Colors.deepPurple),
           onPressed: () => Navigator.of(context).pop(),
         ),
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           "New Chat",
           style: TextStyle(color: Colors.black),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.campaign),
+            icon: const Icon(Icons.campaign),
             color: Colors.deepPurple,
             iconSize: 25,
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search_outlined),
+            icon: const Icon(Icons.search_outlined),
             color: Colors.deepPurple,
             iconSize: 25,
           )
@@ -66,7 +66,7 @@ class _FloatPageState extends State<FloatPage> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
-                    children: [
+                    children: const [
                       CircleAvatar(
                         backgroundColor: Colors.deepPurple,
                         child: Icon(
@@ -84,7 +84,7 @@ class _FloatPageState extends State<FloatPage> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
-                    children: [
+                    children: const [
                       CircleAvatar(
                         backgroundColor: Colors.deepPurple,
                         child: Icon(
@@ -102,43 +102,41 @@ class _FloatPageState extends State<FloatPage> {
               ],
             ),
           ),
-          Container(
-            child: ListView(
-              shrinkWrap: true,
-              // scrollDirection: ,
-              children: [
-                Card(
-                    elevation: 5,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "RECENT",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                        SizedBox(height: 10),
-                        name('AJ', 'Austin Jems'),
-                        SizedBox(height: 10),
-                        name('EJ', 'Eric Josh'),
-                        SizedBox(height: 10),
-                        name('MR', 'Mega Rich'),
-                        SizedBox(height: 10),
-                        name('AK', 'Angela  Keb'),
-                        SizedBox(height: 10),
-                        name('JR', 'Joseph Right'),
-                      ],
-                    )),
-                Column(
-                  children: [
-                    name('AJ', 'Austin Jems'),
-                    SizedBox(height: 10),
-                    name('EJ', 'Eric Josh'),
-                    SizedBox(height: 10),
-                    name('MR', 'Mega Rich'),
-                  ],
-                )
-              ],
-            ),
+          ListView(
+            shrinkWrap: true,
+            // scrollDirection: ,
+            children: [
+              Card(
+                  elevation: 5,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "RECENT",
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      const SizedBox(height: 10),
+                      name('AJ', 'Austin Jems'),
+                      const SizedBox(height: 10),
+                      name('EJ', 'Eric Josh'),
+                      const SizedBox(height: 10),
+                      name('MR', 'Mega Rich'),
+                      const SizedBox(height: 10),
+                      name('AK', 'Angela  Keb'),
+                      const SizedBox(height: 10),
+                      name('JR', 'Joseph Right'),
+                    ],
+                  )),
+              Column(
+                children: [
+                  name('AJ', 'Austin Jems'),
+                  const SizedBox(height: 10),
+                  name('EJ', 'Eric Josh'),
+                  const SizedBox(height: 10),
+                  name('MR', 'Mega Rich'),
+                ],
+              )
+            ],
           )
         ],
       ),

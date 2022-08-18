@@ -1,8 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:viber/pages/call.dart';
-import 'package:viber/pages/viber.dart';
 
 class Explore extends StatefulWidget {
   const Explore({Key? key}) : super(key: key);
@@ -11,7 +7,7 @@ class Explore extends StatefulWidget {
   _ExploreState createState() => _ExploreState();
 }
 
-Padding Vibe(String picture, String photo) {
+Padding vibe(String picture, String photo) {
   return Padding(
     padding: const EdgeInsets.fromLTRB(8, 8, 8, 30),
     child: Stack(
@@ -63,7 +59,7 @@ class _ExploreState extends State<Explore> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 2,
-        title: Text(
+        title: const Text(
           "Viber",
           style: TextStyle(
               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
@@ -79,7 +75,7 @@ class _ExploreState extends State<Explore> {
                   height: 200,
                   width: 400,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/a.jpeg"),
                           fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(20))),
@@ -90,7 +86,7 @@ class _ExploreState extends State<Explore> {
                   height: 300,
                   width: 400,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/b.jpeg"), fit: BoxFit.fill),
                       borderRadius: BorderRadius.circular(20))),
             ),
@@ -100,7 +96,7 @@ class _ExploreState extends State<Explore> {
                   height: 200,
                   width: 400,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/c.png"), fit: BoxFit.fill),
                       borderRadius: BorderRadius.circular(20))),
             ),
@@ -110,18 +106,18 @@ class _ExploreState extends State<Explore> {
                   height: 300,
                   width: 400,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage("images/d.png"), fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(20))),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
+                  children: const [
                     Text(
                       "#MoreWaysToVibe",
                       style: TextStyle(
@@ -140,7 +136,7 @@ class _ExploreState extends State<Explore> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
@@ -149,24 +145,24 @@ class _ExploreState extends State<Explore> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        Vibe("images/pic1.jpeg", "images/i.jpeg"),
-                        Vibe("images/pic3.jpeg", "images/j.jpeg"),
-                        Vibe("images/pic2.jpeg", "images/g.jpeg"),
-                        Vibe("images/pic4.jpeg", "images/h.png"),
-                        Vibe("images/pic5.jpeg", "images/e.jpeg"),
-                        Vibe("images/pic6.jpeg", "images/f.jpeg")
+                        vibe("images/pic1.jpeg", "images/i.jpeg"),
+                        vibe("images/pic3.jpeg", "images/j.jpeg"),
+                        vibe("images/pic2.jpeg", "images/g.jpeg"),
+                        vibe("images/pic4.jpeg", "images/h.png"),
+                        vibe("images/pic5.jpeg", "images/e.jpeg"),
+                        vibe("images/pic6.jpeg", "images/f.jpeg")
                       ],
                     ),
                   ),
                 ),
               ],
             ),
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Download sticker pack",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),

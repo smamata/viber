@@ -9,7 +9,7 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-Widget message(String Name, String msg, String time, String sname) {
+Widget message(String name, String msg, String time, String sname) {
   return SizedBox(
     width: double.infinity,
     child: Padding(
@@ -20,7 +20,7 @@ Widget message(String Name, String msg, String time, String sname) {
             backgroundColor: Colors.deepPurple,
             child: Text(sname),
           ),
-          SizedBox(
+          const SizedBox(
             width: 25,
           ),
           Expanded(
@@ -32,19 +32,19 @@ Widget message(String Name, String msg, String time, String sname) {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      Name,
-                      style: TextStyle(
+                      name,
+                      style: const TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.black),
                     ),
                     Text(
                       time,
-                      style: TextStyle(fontSize: 8.0),
+                      style: const TextStyle(fontSize: 8.0),
                     )
                   ],
                 ),
                 Text(
                   msg,
-                  style: TextStyle(color: Colors.black, fontSize: 12),
+                  style: const TextStyle(color: Colors.black, fontSize: 12),
                 ),
               ],
             ),
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         elevation: 1,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           "Viber",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
@@ -72,13 +72,13 @@ class _HomeState extends State<Home> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.camera_alt_rounded),
+            icon: const Icon(Icons.camera_alt_rounded),
             color: Colors.deepPurple,
             iconSize: 30,
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search_outlined),
+            icon: const Icon(Icons.search_outlined),
             color: Colors.deepPurple,
             iconSize: 30,
           )
@@ -93,14 +93,14 @@ class _HomeState extends State<Home> {
                       MaterialPageRoute(builder: (context) => const Abc()));
                 },
                 child: message('Eric Josh', 'Hey there !!', 'Yesterday', 'ES')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Mega Rich', 'lol 😂', '9:45 PM', 'MR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
@@ -108,63 +108,63 @@ class _HomeState extends State<Home> {
                 }),
                 child:
                     message('Angela  Keb', 'Will be right back', 'Mon', 'AK')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             InkWell(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Abc()));
                 }),
                 child: message('Joseph Right', 'hahaha', 'Mar 05', 'JR')),
-            Divider(),
+            const Divider(),
             // InkWell(
             //   onTap: (() {
             //     Navigator.push(context,
@@ -197,7 +197,7 @@ class _HomeState extends State<Home> {
               MaterialPageRoute(builder: (context) => const FloatPage()));
         },
         backgroundColor: Colors.deepPurple,
-        label: Icon(Icons.message_rounded),
+        label: const Icon(Icons.message_rounded),
       ),
     );
   }

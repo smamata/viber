@@ -1,4 +1,4 @@
-import 'dart:ui';
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
 import 'package:viber/pages/call.dart';
@@ -15,11 +15,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int currentState = 0;
-  static List<Widget> _widgetOptions = <Widget>[
-    Home(),
-    CallsPage(),
-    Explore(),
-    More()
+  static final List<Widget> _widgetOptions = <Widget>[
+    const Home(),
+    const CallsPage(),
+    const Explore(),
+    const More()
   ];
   @override
   Widget build(BuildContext context) {
